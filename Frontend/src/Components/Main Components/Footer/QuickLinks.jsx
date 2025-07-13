@@ -28,9 +28,9 @@ const quickLinks = [
 
 const QuickLinksFooter = () => {
   return (
-    <div className="py-4 bg-gray-50">
+    <div className="py-4">
       <nav aria-label="Quick Links">
-        <ul className="flex flex-wrap gap-4 justify-center text-sm">
+        <ul className="flex flex-wrap gap-2.5 text-sm font-light">
           {quickLinks.map((link, index) => (
             <li key={index}>
               <a 
