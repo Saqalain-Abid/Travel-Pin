@@ -21,7 +21,7 @@ export default function HotelCard({
 
           <div className="mt-3 flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <span className="text-lg font-bold text-white bg-blue-600 px-2 py-0.5 rounded">
+              <span className="text-md font-bold text-white bg-blue-800 px-1.5 py-0.5 rounded-tr-sm rounded-tl-sm rounded-br-sm">
                 {rating}
               </span>
               <div className="flex flex-col space-y-0.5">
