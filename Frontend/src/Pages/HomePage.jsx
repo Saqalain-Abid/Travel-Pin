@@ -9,6 +9,8 @@ import PopularDestinations from '../Components/UI/populardestination'
 import ExploreCarousel from '../Components/UI/Carousels/exploreCarousel'
 import DealsCarousel from '../Components/UI/Carousels/dealsCarousel'
 import Footer from '../Components/Main Components/Footer/Footer'
+import PopularTravelers from '../Components/UI/PopularTravlers/popularTravlers'
+import PopularTabs from '../Components/UI/PopularTravlers/popularTabs'
 
 const HomePage = () => {
   return (
@@ -113,6 +115,53 @@ const HomePage = () => {
         <h1 className="text-3xl font-bold">Deals for the weekend</h1>
         <p className="text-gray-500 text-base font-normal">Save on stays for July 18 - July 20</p>
         <DealsCarousel />
+      </div>
+
+      <section className="max-w-6xl mx-auto my-5 flex flex-col gap-2" data-testid="genius-banner">
+        <h1 className="text-3xl font-bold">Travel more, spend less</h1>
+
+        <div className="p-5 flex flex-col gap-2 bg-white border border-gray-300 rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row justify-between gap-4 items-center">
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-semibold">Sign in to save 10% or more</h3>
+              <p>Enjoy instant discounts on select stays and book faster with a Genius membership</p>
+
+              <div className="flex gap-4 mt-2">
+                <a
+                  href="https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-us&aid=304142"
+                  className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                >
+                  Sign in
+                </a>
+                <a
+                  href="https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-us&aid=304142"
+                  className="bg-gray-100 text-gray-800 px-4 py-2 rounded hover:bg-gray-200 transition"
+                >
+                  Register
+                </a>
+              </div>
+            </div>
+
+            <picture className="h-[104px] flex-shrink-0">
+              <source
+                srcSet="https://t-cf.bstatic.com/design-assets/assets/v3.155.1/illustrations-traveller/GeniusGenericGiftBox@2x.png"
+                media="(min-resolution: 2dppx)"
+              />
+              <img
+                src="https://t-cf.bstatic.com/design-assets/assets/v3.155.1/illustrations-traveller/GeniusGenericGiftBox.png"
+                alt="Genius Gift Box"
+                className="h-full object-contain"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <div className="max-w-6xl mx-auto my-3">
+        <h1 className="text-3xl font-bold">Popular with Travelers from Pakistan</h1>
+        <PopularTabs />
+        <PopularTravelers />
       </div>
 
       <div className="mt-3">

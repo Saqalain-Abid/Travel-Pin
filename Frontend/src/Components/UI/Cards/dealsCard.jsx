@@ -10,7 +10,7 @@ export default function DealsCard({
   link,
 }) {
   return (
-    <div className="w-full sm:w-1/2 lg:w-[304px] max-w-full rounded-xl shadow-2xl overflow-hidden bg-white transition-transform hover:scale-[1.02]">
+    <div className="w-full sm:w-1/2 lg:w-[304px] max-w-full rounded-xl shadow-md shadow- overflow-hidden transition-transform hover:scale-[1.02]">
       <a href={link} target="_blank" rel="noopener noreferrer">
         <div className="w-full h-56 overflow-hidden">
           <img src={image} alt={name} className="w-full h-full object-cover" />
