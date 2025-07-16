@@ -12,6 +12,32 @@ import Footer from '../Components/Main Components/Footer/Footer'
 import PopularTravelers from '../Components/UI/PopularTravlers/popularTravlers'
 import PopularTabs from '../Components/UI/PopularTravlers/popularTabs'
 
+const TripPlannerTab = [
+    'Shopping',
+    'Gastronomic Tours',
+    'Cultural Exploration',
+    'Local Festivals',
+    'Wildlife Observation',
+];
+
+const PopularTravelersTab = [
+    'Domestic cities',
+    'International cities',
+    'Regions',
+    'Countries',
+    'Places to stay',
+];
+
+ const handleTripTabChange = (tab) => {
+        console.log('Selected Tab:', tab);
+        // Additional logic (e.g., fetch content for that tab)
+  };
+
+  const handleTravelerTabChange = (tab) => {
+        console.log('Selected Traveler Tab:', tab);
+        // Additional logic (e.g., fetch content for that tab)
+  };
+
 const HomePage = () => {
   return (
     <>
@@ -92,7 +118,7 @@ const HomePage = () => {
       <div className="max-w-6xl mx-auto my-3">
         <h1 className="text-3xl font-bold">Quick and easy trip planner</h1>
         <p className="text-gray-500 text-base font-normal">Pick a vibe and explore the top destinations in Pakistan</p>
-        <Tabs />
+        <Tabs tabs={TripPlannerTab} defaultActive="Shopping" onTabChange={handleTripTabChange} />
         <CityCarousel />
       </div>
 
@@ -128,13 +154,13 @@ const HomePage = () => {
 
               <div className="flex gap-4 mt-2">
                 <a
-                  href="https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-us&aid=304142"
+                  href="/login"
                   className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
                 >
                   Sign in
                 </a>
                 <a
-                  href="https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-us&aid=304142"
+                  href="/register"
                   className="bg-gray-100 text-gray-800 px-4 py-2 rounded hover:bg-gray-200 transition"
                 >
                   Register
@@ -158,9 +184,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      <div className="max-w-6xl mx-auto my-3">
+      <div className="max-w-6xl mx-auto my-8">
         <h1 className="text-3xl font-bold">Popular with Travelers from Pakistan</h1>
-        <PopularTabs />
+        <Tabs tabs={PopularTravelersTab} defaultActive="Domestic cities" onTabChange={handleTravelerTabChange} />
         <PopularTravelers />
       </div>
 

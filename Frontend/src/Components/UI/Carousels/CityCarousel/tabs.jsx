@@ -1,16 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const tabs = [
-    'Shopping',
-    'Gastronomic Tours',
-    'Cultural Exploration',
-    'Local Festivals',
-    'Wildlife Observation',
-];
+export default function Tabs({ tabs = [], defaultActive = '', onTabChange }) {
+    const [activeTab, setActiveTab] = useState(defaultActive || tabs[0]);
 
-export default function Tabs() {
-    const [activeTab, setActiveTab] = useState('Shopping');
-
+    useEffect(() => {
+        if (onTabChange) onTabChange(activeTab);
+    }, [activeTab, onTabChange]);
+    
     return (
         <div className="overflow-x-auto">
             <nav className="flex space-x-4 py-2">
@@ -19,9 +15,9 @@ export default function Tabs() {
                         key={tab}
                         onClick={() => setActiveTab(tab)}
                         className={`text-sm font-medium px-4 py-3 rounded-4xl transition 
-              ${activeTab === tab
+                            ${activeTab === tab
                                 ? 'border border-blue-600 text-blue-600 hover:cursor-pointer'
-                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:cursor-pointer'
+                                : 'text-gray-700 hover:bg-gray-100 hover:cursor-pointer'
                             }`}
                     >
                         {tab}

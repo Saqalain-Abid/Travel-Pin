@@ -21,7 +21,7 @@ export default function PopularTabs() {
                         className={`text-sm font-medium px-4 py-3 rounded-4xl transition 
               ${activeTab === tab
                                 ? 'border border-blue-600 text-blue-600 hover:cursor-pointer'
-                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:cursor-pointer'
+                                : 'text-gray-700 hover:bg-gray-100 hover:cursor-pointer'
                             }`}
                     >
                         {tab}

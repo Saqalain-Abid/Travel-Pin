@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
 const footerData = [
@@ -59,7 +60,7 @@ const PopularTravelers = () => {
 
     return (
         <div className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 py-8 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 py-3 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                 {footerData.map((section, idx) => (
                     <div key={idx}>
                         <ul className="space-y-2 transition-all duration-300">
@@ -80,12 +81,12 @@ const PopularTravelers = () => {
                 ))}
             </div>
 
-            <div className="text-center">
+            <div>
                 <button
                     onClick={toggleAll}
-                    className="text-blue-600 text-sm hover:underline focus:outline-none"
+                    className="text-blue-600 text-sm text-transform: uppercase cursor-pointer focus:outline-none"
                 >
-                    {isExpanded ? 'See less' : 'See more'}
+                   <FontAwesomeIcon icon="fa fa-plus" /> {isExpanded ? 'See less' : 'See more'}
                 </button>
             </div>
         </div>
