@@ -65,6 +65,62 @@ export default function DealsCarousel() {
                         link="/"
                     />
                 </div>
+                <div className="px-2">
+                    <DealsCard
+                        name="Panoramic Hotel Lahore"
+                        location="Lahore, Pakistan"
+                        rating="8.0"
+                        reviewText="Very Good"
+                        reviewCount="232"
+                        image="https://cf.bstatic.com/xdata/images/hotel/square600/633900980.webp?k=114983dae25f4bfac39000d5a163173e11abdf22bc692a5b52768c37522fbcc2&o="
+                        link="/"
+                    />
+                </div>
+                <div className="px-2">
+                    <DealsCard
+                        name="Panoramic Hotel Lahore"
+                        location="Lahore, Pakistan"
+                        rating="8.0"
+                        reviewText="Very Good"
+                        reviewCount="232"
+                        image="https://cf.bstatic.com/xdata/images/hotel/square600/633900980.webp?k=114983dae25f4bfac39000d5a163173e11abdf22bc692a5b52768c37522fbcc2&o="
+                        link="/"
+                    />
+                </div>
+                <div className="px-2">
+                    <DealsCard
+                        name="Panoramic Hotel Lahore"
+                        location="Lahore, Pakistan"
+                        rating="8.0"
+                        reviewText="Very Good"
+                        reviewCount="232"
+                        image="https://cf.bstatic.com/xdata/images/hotel/square600/633900980.webp?k=114983dae25f4bfac39000d5a163173e11abdf22bc692a5b52768c37522fbcc2&o="
+                        link="/"
+                    />
+                </div>
+                <div className="px-2">
+                    <DealsCard
+                        name="Panoramic Hotel Lahore"
+                        location="Lahore, Pakistan"
+                        rating="8.0"
+                        reviewText="Very Good"
+                        reviewCount="232"
+                        image="https://cf.bstatic.com/xdata/images/hotel/square600/633900980.webp?k=114983dae25f4bfac39000d5a163173e11abdf22bc692a5b52768c37522fbcc2&o="
+                        link="/"
+                    />
+                </div>
+                <div className="px-2">
+                    <DealsCard
+                        name="Panoramic Hotel Lahore"
+                        location="Lahore, Pakistan"
+                        rating="8.0"
+                        reviewText="Very Good"
+                        reviewCount="232"
+                        image="https://cf.bstatic.com/xdata/images/hotel/square600/633900980.webp?k=114983dae25f4bfac39000d5a163173e11abdf22bc692a5b52768c37522fbcc2&o="
+                        link="/"
+                    />
+                </div>
+
                 {/* Add more <div className="px-2"><DealsCard /></div> as needed */}
             </Slider>
         </div>
