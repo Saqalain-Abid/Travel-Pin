@@ -102,7 +102,7 @@ export default function DealsCarousel() {
     function NextArrow({ onClick }) {
         return showRightArrow ? (
             <div
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-lg cursor-pointer"
+                className="absolute -right-2 top-40 -translate-y-13 z-10 bg-white hover:bg-white rounded-full p-2 shadow-zinc-800 shadow-lg cursor-pointer"
                 onClick={onClick}
             >
                 <svg className="w-5 h-5" fill="none" stroke="black" strokeWidth="2" viewBox="0 0 24 24">
@@ -115,7 +115,7 @@ export default function DealsCarousel() {
     function PrevArrow({ onClick }) {
         return showLeftArrow ? (
             <div
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-lg cursor-pointer"
+                className="absolute -left-2 top-40 -translate-y-13 z-10 bg-white hover:bg-white rounded-full p-2 shadow-zinc-800 shadow-lg cursor-pointer"
                 onClick={onClick}
             >
 
