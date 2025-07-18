@@ -13,7 +13,7 @@ export default function DealsCard({
   nights,
 }) {
   return (
-    <div className="w-full max-w-[304px] h-[480px] bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02] flex flex-col">
+    <div className="w-full max-w-[304px] h-[480px] bg-white rounded-xl shadow-md overflow-hidden transition-transform flex flex-col">
       <a href={link} target="_blank" rel="noopener noreferrer" className="flex flex-col h-full">
         {/* Image */}
         <div className="w-full h-56 overflow-hidden">
@@ -54,8 +54,8 @@ export default function DealsCard({
           <div className="mt-4 flex justify-end items-end text-right">
             <div className='flex flex-row items-center space-x-1'>
               <p className="text-sm text-gray-600">{nights} nights</p>
-              <p className="text-sm text-gray-500 line-through">{originalPrice}</p>
-              <p className="text-lg font-semibold text-red-600">{discountedPrice}</p>
+              <p className="text-sm text-red-600 line-through">{originalPrice}</p>
+              <p className="text-lg font-bold">{discountedPrice}</p>
             </div>
           </div>
         </div>

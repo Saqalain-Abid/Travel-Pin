@@ -10,33 +10,32 @@ import ExploreCarousel from '../Components/UI/Carousels/exploreCarousel'
 import DealsCarousel from '../Components/UI/Carousels/dealsCarousel'
 import Footer from '../Components/Main Components/Footer/Footer'
 import PopularTravelers from '../Components/UI/PopularTravlers/popularTravlers'
-import PopularTabs from '../Components/UI/PopularTravlers/popularTabs'
 
 const TripPlannerTab = [
-    'Shopping',
-    'Gastronomic Tours',
-    'Cultural Exploration',
-    'Local Festivals',
-    'Wildlife Observation',
+  'Shopping',
+  'Gastronomic Tours',
+  'Cultural Exploration',
+  'Local Festivals',
+  'Wildlife Observation',
 ];
 
 const PopularTravelersTab = [
-    'Domestic cities',
-    'International cities',
-    'Regions',
-    'Countries',
-    'Places to stay',
+  'Domestic cities',
+  'International cities',
+  'Regions',
+  'Countries',
+  'Places to stay',
 ];
 
- const handleTripTabChange = (tab) => {
-        console.log('Selected Tab:', tab);
-        // Additional logic (e.g., fetch content for that tab)
-  };
+const handleTripTabChange = (tab) => {
+  console.log('Selected Tab:', tab);
+  // Additional logic (e.g., fetch content for that tab)
+};
 
-  const handleTravelerTabChange = (tab) => {
-        console.log('Selected Traveler Tab:', tab);
-        // Additional logic (e.g., fetch content for that tab)
-  };
+const handleTravelerTabChange = (tab) => {
+  console.log('Selected Traveler Tab:', tab);
+  // Additional logic (e.g., fetch content for that tab)
+};
 
 const HomePage = () => {
   return (
