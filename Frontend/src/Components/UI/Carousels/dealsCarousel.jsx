@@ -115,7 +115,7 @@ export default function DealsCarousel() {
     function PrevArrow({ onClick }) {
         return showLeftArrow ? (
             <div
-                className="absolute -left-2 top-40 -translate-y-13 z-10 bg-white hover:bg-white rounded-full p-2 shadow-zinc-800 shadow-lg cursor-pointer"
+                className="absolute -left-2 top-40 -translate-y-13 z-10 bg-white hover:bg-white rounded-full p-2 shadow-zinc-800 shadow-lg"
                 onClick={onClick}
             >
 
